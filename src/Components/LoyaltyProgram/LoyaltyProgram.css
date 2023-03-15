@@ -1,0 +1,31 @@
+.loyalty_bg {
+    background: #075066;
+    width: 100%;
+}
+.loyalty {
+    display: flex;
+    padding: 25px 10px 0 10px;
+}
+.loyalty_title {
+    font-size: 100px;
+    color: #fff;
+    width: 100%;
+}
+.loyalty_icon {
+    margin-right: 50px;
+    width: 2.6%;
+}
+.loyalty_text {
+    font-family: TTNormsRegular;
+    font-size: 30px;
+    color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+    .loyalty_title {
+        font-size: 50px;
+    }
+    .loyalty_text {
+        font-size: 15px;
+    }
+}

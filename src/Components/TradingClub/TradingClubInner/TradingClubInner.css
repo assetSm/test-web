@@ -1,0 +1,206 @@
+.trading_list {
+    display: flex;
+    justify-content: space-between;
+}
+.trading_item {
+    width: 30%;
+}
+.trading_item_block {
+    background: #00B5A5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 762px;
+    border-radius: 50px;
+}
+.trading_item_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.trading_item_btn {
+    font-size: 30px;
+    font-family: TTNormsRegular;
+    background: transparent;
+    width: 324px;
+    height: 51px;
+    margin-top: 25px;
+}
+.dolphin_color_btn {
+    border: 1px solid #00B5A5;
+    color: #00B5A5;
+    border-radius: 10px;
+}
+.shark_color_btn {
+    border: 1px solid #E84F35;
+    color: #E84F35;
+    border-radius: 10px;
+}
+.whale_color_btn {
+    border: 1px solid #075066;
+    color: #075066;
+    border-radius: 10px;
+}
+.trading_item_inner {
+    position: relative;
+    height: 207px;
+    border-radius: 50px;
+    background: #B0E7E2;
+}
+.trading_sales {
+    position: absolute;
+    top: -28px;
+    left: -5px;
+}
+.ellipse {
+    z-index: 2;
+}
+.round {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    z-index: 1;
+}
+.icon {
+    position: absolute;
+    left: 27px;
+    top:27px;
+    z-index: 3;
+}
+.shark {
+    background: #E84F35;
+}
+.whale {
+    background: #075066;
+}
+.trading_item_inner_title {
+    text-align: end;
+    color: #075066;
+    font-size: 45px;
+    padding: 20px 20px 0 0;
+}
+.trading_item_inner_text {
+    text-align: end;
+    font-family: TTNormsRegular;
+    font-size: 20px;
+    padding: 0 20px 0 0;
+}
+.trading_item_inner_text_usdt {
+    padding: 0 10px 0 0;
+    display: block;
+    font-family: TTNormsRegular;
+    font-size: 15px;
+    color: #fff;
+    text-align: end;
+}
+.trading_item_inner_text_sale {
+    font-family: TTNormsBold;
+    font-size: 16px;
+    color: #00B5A5;
+    padding: 30px 0 0 33px;
+}
+.trading_item_inner_text_present {
+    font-family: TTNormsRegular;
+    font-size: 20px;
+    color: #075066;
+    padding: 0 0 0 33px;
+}
+.trading_item_wrap {
+    border: 2px solid #00B5A5;
+    height: 669px;
+    background: #fff;
+    border-radius: 50px;
+    width: 100%;
+}
+.trading_item_text {
+    font-family: TTNormsBold;
+    font-size: 20px;
+    text-align: center;
+}
+.trading_item_discount {
+    text-align: center;
+    font-size: 50px;
+}
+.trading_item_title {
+    color: #00B5A5;
+    font-size: 40px;
+}
+h6 {
+    color: #00B5A5;
+    font-family: TTNormsBold;
+    font-size: 20px;
+
+}
+.trading_item_info {
+    margin: 22px 0 0 37px;
+}
+.summit_traders {
+    margin-top: 20px;
+}
+.crypto_conference {
+    margin-top: 20px;
+}
+.trading_item_info_text {
+    display: list-item;
+    list-style: inside;
+    font-family: TTNormsRegular;
+    font-size: 16px;
+    color:#00B5A5;
+    margin-left: 10px;
+}
+.trading_item_info_text_small {
+    font-family: TTNormsBold;
+    font-size: 10px;
+    color:#00B5A5;
+}
+.shark_wrap {
+    border: 2px solid #E84F35;
+}
+.shark_inner {
+    background: #F5C0B7;
+}
+.shark_text {
+    color: #E84F35;
+}
+.dolphin_text {
+
+}
+.whale_wrap {
+    border: 2px solid #075066;
+}
+.whale_inner {
+    background: #8EBBC9;
+}
+.whale_text {
+    color: #075066;
+}
+
+@media screen and (max-width: 992px) {
+    .trading_list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .trading_item {
+        width: 95%;
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 776px){
+    .trading_item {
+        width: 95%;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .trading_list {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 120px;
+    }
+    .trading_item {
+        width: 95%;
+        margin-top: 50px;
+    }
+}

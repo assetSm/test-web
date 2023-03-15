@@ -1,0 +1,128 @@
+.round_results_inner {
+    padding: 0 10px;
+}
+.round_results_list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.round_results_item {
+    width: 32%;
+}
+.round_results_item_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.results_item_text_link{
+    font-size: 40px;
+    font-weight: 400;
+    color: #E84F35;
+    font-family: RistrettoProMedium;
+}
+.round_results_item_info {
+    padding-top: 20px  ;
+    border-top: 3px solid #075066;
+}
+.round_results_item_info_block {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #075066;
+}
+.round_results_item_info_text {
+    font-family: TTNormsRegular;
+    font-size: 30px;
+    color: #075066;
+    margin: 5px 0;
+}
+.percent {
+    text-align: end;
+}
+.round_results_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.round_results_info_text {
+    font-size: 34px;
+    background: #E84F35;
+    border-radius: 40px;
+    text-align: center;
+    padding: 5px;
+}
+.round_results_info_btn {
+    font-family: TTNormsRegular;
+    font-size: 30px;
+    background: transparent;
+    color: #075066;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 1px solid #075066;
+}
+.followers {
+    font-size: 50px;
+    font-family: RistrettoProMedium;
+    color: #075066;
+}
+.round_results_info_followers_wrap {
+    width: 38%;
+}
+.strong {
+    font-family: TTNormsBold;
+}
+
+@media screen and (max-width: 992px) {
+    .round_results_item_info_text {
+        font-size: 20px;
+    }
+    .round_results_info_text {
+        font-size: 20px;
+    }
+    .followers {
+        font-size: 25px;
+    }
+    .qr {
+        width: 10%;
+    }
+    .round_results_info_btn {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 776px) {
+    .round_results_list {
+        flex-direction: column;
+    }
+    .round_results_item {
+        width: 100%;
+    }
+    .round_results_info {
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .round_results_info_followers_wrap {
+        width: 100%;
+    }
+    .qr {
+        display: none;
+    }
+}
+@media screen and (max-width: 400px) {
+    .round_results_list {
+        flex-direction: column;
+    }
+    .round_results_item {
+        width: 100%;
+    }
+    .round_results_info {
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .qr {
+        display: none;
+    }
+    .round_results_info_followers_wrap {
+        width: 100%;
+    }
+}

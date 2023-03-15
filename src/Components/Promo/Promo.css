@@ -1,0 +1,105 @@
+.promo_bg {
+    background: #00B5A5;
+    width: 100%;
+}
+.promo {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+}
+.promo_block {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    margin-top: 124px;
+}
+.promo_block_title {
+    font-size: 150px;
+    font-weight: 700;
+    color: #fff;
+}
+.promo_block_btn {
+    background: #E84F35;
+    padding: 6px 17px;
+    border-radius: 25px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    font-family: TTNormsBold;
+}
+.promo_block_btn_buy {
+    color: #fff;
+    background: #E84F35;
+    font-size: 30px;
+    font-family: TTNormsRegular;
+    font-weight: 400;
+    border-radius: 10px;
+    text-align: start;
+    padding: 6px 108px 6px 40px;
+}
+.promo_block_text {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    font-family: TTNormsBold;
+    text-align: start;
+}
+.promo_text {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 400;
+    font-family: TTNormsRegular;
+    text-align: start;
+}
+
+
+@media screen and (max-width: 992px) {
+    .promo_img {
+        max-width: 100px;
+    }
+    .promo_block_title {
+        font-size: 70px;
+    }
+    .promo_block {
+        margin-top: 10px;
+    }
+    .promo_block_btn {
+        font-size: 30px;
+    }
+    .promo_block_text {
+        font-size: 20px;
+    }
+    .promo_text {
+        font-size: 30px;
+    }
+    .promo_block_btn_buy {
+        font-size: 15px;
+        padding: 3px 20px 3px 4px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .promo_img {
+        max-width: 100px;
+    }
+    .promo_block_title {
+        font-size: 50px;
+    }
+    .promo_block {
+        margin-top: 10px;
+    }
+    .promo_block_btn {
+        font-size: 20px;
+    }
+    .promo_block_text {
+        font-size: 10px;
+    }
+    .promo_text {
+        font-size: 10px;
+    }
+    .promo_block_btn_buy {
+        font-size: 15px;
+        padding: 3px 20px 3px 4px;
+    }
+}
