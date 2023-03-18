@@ -128,13 +128,14 @@
     margin: 0 17px;
     
 }
-@media screen and (min-width: 1200px){
+
+@media screen and (min-width: 999px){
     .loyalty_inner {
         position: relative;
     }
     .loyalty_inner_return_btn_wrap {
         position: absolute;
-        right: 480px;
+        right: 280px;
         top: 30px;
         transform: rotate(90deg);
     }
@@ -144,8 +145,8 @@
     .loyalty_inner_animation {
         position: absolute;
         right: -10px;
-        top: 200px;
-        width: 20%;
+        top: 0px;
+        width: 15%;
     }
     .loyalty_offer {
         background: transparent;
@@ -175,7 +176,7 @@
     .loyalty_inner_animation {
         position: absolute;
         right: -70px;
-        bottom: 0;
+        top: 200px;
         width: 24%;
     }
 }
