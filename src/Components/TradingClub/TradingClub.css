@@ -1,18 +1,23 @@
 .trading_bg {
     background: #E84F35;
-    width: 100%;
 }
 .trading_bg_open {
     background: transparent;
 }
 .trading {
-    padding: 25px 10px 15px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    cursor: pointer;
+}
+.trading_wrap {
+    display: flex;
+    padding: 25px 10px 0;
+}
+.trading_img {
+    display: none;
 }
 .trading_title {
-    font-size: 100px;
+    font-size: 60px;
     color: #fff;
 }
 .trading_title_open {
@@ -20,54 +25,20 @@
     font-size: 100px;
 }
 .trading_triangle {
-    margin-right: 50px;
-    width: 2.6%;
+    margin: 30px 10px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    border-width: 41px 20.5px 0 20.5px;
+    display: inline-block;
 }
 
-.trading_icon {
-    position: relative;
-}
-.trading_icon_text {
-    position: absolute;
-    left: 130px;
-    top: 70px;
-    font-size: 50px;
-    color: #075066;
-}
-@media screen and (max-width: 992px) {
+
+@media screen and (min-width: 999px) {
     .trading_title {
-        font-size: 50px;
-    }
-}
-@media screen and (max-width: 776px) {
-    .trading {
-        position: relative;
+        font-size: 100px;
     }
     .trading_img {
-        display: none;
+        display: block;
     }
-    .trading_title_open {
-        font-size: 50px;
-    }
-    .trading_icon {
-        position: absolute;
-        top: 150px;
-        left: 80px
-    }
-}
-@media screen and (max-width: 400px) {
-    .trading {
-        position: relative;
-    }
-    .trading_img {
-        display: none;
-    }
-    .trading_title_open {
-        font-size: 50px;
-    }
-    .trading_icon {
-        position: absolute;
-        top: 150px;
-        left: 80px
-    }
+    
 }

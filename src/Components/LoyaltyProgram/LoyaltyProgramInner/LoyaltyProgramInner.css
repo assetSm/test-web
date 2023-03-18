@@ -2,15 +2,17 @@
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
+    flex-direction: column;
 }
-.loyalty_inner_animation {
-    min-width: 300px;
-    min-height: 500px;
+.loyalty_inner_title_wrap {
+    cursor: pointer;
+    display: flex;
+}
+.loyalty_title_wrap {
+    min-width: 50%;
 }
 .loyalty_list {
     display: flex;
-    width: 100%;
-    flex-direction: column;
 }
 .loyalty_item {
     display: flex;
@@ -20,42 +22,77 @@
 .loyalty_item_title {
     font-family: TTNormsBold;
     color: #fff;
-    font-size: 40px;
+    font-size: 20px;
     margin-top: 29px;
+}
+.loyalty_item_title_text {
+    font-family: TTNormsRegular;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 65px;
 }
 .loyalty_item_text {
     font-family: TTNormsRegular;
     color: #fff;
-    font-size: 20px;
+    font-size: 14px;
     margin-top: 56px;
 }
 .loyalty_item_img {
-    margin: 0 0 0 25px;
-}
-.loyalty_list_img_wrap {
     display: flex;
-    align-items: flex-end;
+    position: absolute;
+    bottom: 330px;
+    max-width: 90%;
+}
+.high_offer_img {
+    bottom: 315px;  
+}
+.loyalty_program_levels {
+    display: flex;
+    flex-direction: column;
     justify-content: flex-end;
+    margin: 0 15px 50px 0;
 }
-.loyalty_item_wrap {
+.loyalty_offers {
+    position: relative;
+    padding: 135px 0 0 0;
     display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.loyalty_offers::-webkit-scrollbar {
+    display: none;
+  }
+.loyalty_offer {
+    cursor: pointer;
+    flex: 0 0 auto;
+    background: #00B5A5;
+    padding: 0 0 50px 0;
+    width: 220px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 15px 0 0;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+.no_priority_offer {
+    background: #075066;
+}
+.high_offer {
+    background: #F4A276;
 }
 .loyalty_item_percent {
     font-family: TTNormsBold;
     color: #fff;
     font-size: 40px;
-    margin-top: 29px;
+    margin-top: 4px;
 }
 .percent_color {
-    color: #00B5A5;
+    color: #F4A276;
 }
-.loyalty_info_text {
-    font-family: TTNormsBold;
-    color: #fff;
-    font-size: 21px;
-    margin: 29px 0 79px 0;
-    text-align: end;
-}
+
 .loyalty_bottom_line {
     margin-top: 29px;
     border-bottom: 1px solid #fff;
@@ -64,49 +101,81 @@
 .loyalty_bottom_block {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
 }
-@media screen and (max-width: 992px){
-    .loyalty_item_img{
-        max-width: 130px;
-    }
-    .loyalty_inner_animation {
-        min-width: 214px;
-        min-height: 303px;
-    }
+.loyalty_bottom_text {
+    font-family: TTNormsBold;
+    color: #fff;
+    font-size: 21px;
+    margin: 29px 0 79px 0;
+    text-align: center;
 }
-@media screen and (max-width: 776px) {
+.loyalty_inner_return_btn_wrap {
+    display: flex;
+    align-items: center;
+    margin: 0 0 30px;
+    cursor: pointer;
+}
+.loyalty_inner_return_btn_triangle {
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+    border-width: 20px 40px 20px 0;
+    display: inline-block;
+}
+.loyalty_inner_return_btn_text {
+    font-family: TTNormsRegular;
+    font-size: 20px;
+    margin: 0 17px;
+    
+}
+@media screen and (min-width: 1200px){
     .loyalty_inner {
         position: relative;
     }
-    .loyalty_item_title {
-        font-size: 20px;
+    .loyalty_inner_return_btn_wrap {
+        position: absolute;
+        right: 480px;
+        top: 30px;
+        transform: rotate(90deg);
     }
-    .loyalty_item_text {
-        font-size: 14px;
-    }
-    .loyalty_item_img {
-        max-width: 75px;
-        margin-right: 5px;
-        margin-left: 0;
-    }
-    .loyalty_item_percent {
-        font-size: 20px;
-    }
-    .loyalty_list {
-        margin-top: 250px;
+    .loyalty_inner_return_btn_text {
+        display: none;
     }
     .loyalty_inner_animation {
         position: absolute;
-        left: 100px;
-        min-width: 154px;
-        min-height: 214px;
+        right: -10px;
+        top: 200px;
+        width: 20%;
+    }
+    .loyalty_offer {
+        background: transparent;
+        border: none;
+    }
+    .percent_color {
+        color: #00B5A5;
+    }
+    .loyalty_item_title {
+        font-size: 40px;
+        margin: 15px 0 0 0;
+    }
+    .loyalty_item_title_text {
+        font-size: 20px;
+    }
+    .loyalty_item_percent {
+        margin: 20px 0 0 0;
+    }
+    .loyalty_item_text {
+        font-size: 20px;
     }
 }
-@media screen and (max-width: 400px){
-    .loyalty_item_img {
-        max-width: 70px;
-        margin-right: 5px;
-        margin-left: 0;
+@media screen and (min-width: 1400px) {
+    .loyalty_inner {
+        position: relative;
+    }
+    .loyalty_inner_animation {
+        position: absolute;
+        right: -70px;
+        bottom: 0;
+        width: 24%;
     }
 }

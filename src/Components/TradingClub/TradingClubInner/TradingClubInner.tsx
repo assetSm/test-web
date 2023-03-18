@@ -1,8 +1,23 @@
 import "./TradingClubInner.css";
 
-const TradingClubInner = () => {
+const TradingClubInner = ({onClickHandler, open}: {onClickHandler: () => void; open: boolean}) => {
     return(
         <div className="container">
+            <div className="trading_inner">
+            <div className="trading_inner_title_wrap">
+                <div className="trading_return_btn_wrap" onClick={onClickHandler}>
+                    <div className="trading_return_btn_triangle"></div>
+                    <p className="trading_return_btn_text">НАЗАД</p>
+                </div>
+                <h3 className="trading_inner_title" onClick={onClickHandler}>ЗАКРЫТЫЙ ТРЕЙДИНГ КЛУБ</h3>
+            </div>
+            <div className="trading_icon">
+                <video width="166px" height="166px">
+                    <source src="src/assets/logo.mp4"/>
+                    Your browser does not support the video tag.
+                </video>
+                <p className="trading_icon_text">CLUB</p>
+            </div>
             <ul className="trading_list">
                 <li className="trading_item">
                     <div className="trading_item_block">
@@ -150,6 +165,7 @@ const TradingClubInner = () => {
                     </div>
                 </li>
             </ul>
+            </div>
         </div>
     )
 };

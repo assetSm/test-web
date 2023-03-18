@@ -1,15 +1,23 @@
 import "./RoundResultsInner.css";
 import {Player} from "@lottiefiles/react-lottie-player";
 
-const RoundResultsInner = () => {
+const RoundResultsInner = ({onClickHandler} : {onClickHandler: () => void}) => {
     return (
         <div className="container round_results_inner">
+            <div className="round_results_inner_return_btn" onClick={onClickHandler}>
+                <div className="round_results_inner_return_triangle"></div>
+                <p className="round_results_inner_return_btn_text">НАЗАД</p>
+            </div>
+            <div className="round_results_inner_title_wrap" onClick={onClickHandler}>
+                <h3 className="results_title">ИТОГИ РАУНДОВ</h3>
+                <p className="round_results_inner_text">ПРЕСЕЙЛЫ ДО ОФИЦИАЛЬНОГО ЛИСТИНГА</p>
+            </div>
             <ul className="round_results_list">
                 <li className="round_results_item">
                     <div className="round_results_item_title">
                         <img src="src/assets/images/*.svg" className="results_item_img"/>
                         <p className="results_item_text">SEED</p>
-                        <span className="results_item_text_link">end</span>
+                        <span className="results_item_text_span">end</span>
                     </div>
                     <div className="round_results_item_info">
                         <div className="round_results_item_info_block">
@@ -37,9 +45,8 @@ const RoundResultsInner = () => {
                 </li>
                 <li className="round_results_item">
                     <div className="round_results_item_title">
-                        <span className="results_item_text">( )</span>
-                        <p className="results_item_text">PRIVATE</p>
-                        <span className="results_item_text_link">sold out</span>
+                        <p className="results_item_text">( ) PRIVATE</p>
+                        <span className="results_item_text_span">sold out</span>
                     </div>
                     <div className="round_results_item_info">
                         <div className="round_results_item_info_block">
@@ -67,9 +74,8 @@ const RoundResultsInner = () => {
                 </li>
                 <li className="round_results_item">
                     <div className="round_results_item_title">
-                        <span className="results_item_text">!</span>
-                        <p className="results_item_text">PUBLIC</p>
-                        <span className="results_item_text_link">13,67%</span>
+                        <p className="results_item_text">! PUBLIC</p>
+                        <span className="results_item_text_span">13,67%</span>
                     </div>
                     <div className="round_results_item_info">
                         <div className="round_results_item_info_block">
@@ -98,7 +104,7 @@ const RoundResultsInner = () => {
             </ul>
             <div className="round_results_info">
                 <img className="qr" src='src/assets/images/QR_ru.svg'/>
-                <div className="round_results_info_followers_wrap">
+                <div>
                     <p className="round_results_info_text">Всего 85 678 держателей токенов LETIT</p>
                     <p className="followers">подписчики @Letit_app узнают инфу по сейлам раньше всех</p>
                 </div>
